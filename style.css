@@ -20,38 +20,42 @@ body {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    height: 130vh;
+    height: 100vh;
     background: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
-.user-profile {
-    text-align: center;
-    margin-bottom: 20px;
+.sidebar.hidden {
+    transform: translateX(-100%);
 }
 
-.user-profile img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.user-profile p {
-    font-weight: bold;
-    margin-top: 10px;
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
 }
-nav .admin{
+
+nav .admin {
     font-weight: bold;
     font-size: 26px;
     text-align: center;
 }
+
 nav ul li {
     margin: 5px;
     padding: 10px;
@@ -68,21 +72,8 @@ nav ul li {
 .content {
     flex: 1;
     padding: 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.add-order {
-    padding: 8px 15px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
 }
 
 /* Order Stats */
@@ -130,6 +121,7 @@ header {
 table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 600px;
 }
 
 thead {
@@ -149,14 +141,6 @@ th, td {
     text-align: center;
 }
 
-.status.new {
-    background: lightblue;
-}
-
-.status.review {
-    background: orange;
-}
-
 .status.hold {
     background: red;
     color: white;
@@ -171,16 +155,40 @@ th, td {
     border: none;
     padding: 10px 15px;
     margin: 5px;
-    }
+}
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+}
+
 @media (max-width: 768px) {
     .dashboard {
         flex-direction: column;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .sidebar {
-        width: 100%;
+        width: 220px;
+        transform: translateX(-100%);
+        height: 100%;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
     }
 
     .order-stats {
