@@ -7,13 +7,20 @@
     <title>Fuel-tech Admins</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <div class="dashboard">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="user-profile">
+            <!-- Close Button -->
+            <button class="close-btn">
+                <i class="fas fa-times"></i> <!-- Font Awesome X Icon -->
+            </button>
 
+            <div class="user-profile">
+                <!-- Profile content can go here -->
             </div>
             <nav>
                 <ul>
@@ -22,20 +29,18 @@
                 <ul>
                     <li>📋Reveiw Order</li>
                     <hr>
-                    <li class="active">📦 Orders</li>
-                    <hr>
                     <li><a href="https://ahmed-hossaam.github.io/fuel-tech-trans/">📑Fuel Tech</a></li>
                     <hr>
-                    <li>📑 Menus</li>
-                    <hr>
+                    <li><button class="status paid employee">Add employee</button></li>
                     <hr>
                 </ul>
             </nav>
         </aside>
 
+        <!-- Main content -->
         <main class="content">
             <header>
-
+                <!-- Header content can go here -->
             </header>
 
             <section class="order-stats">
@@ -66,227 +71,244 @@
                             <th>Map link</th>
                             <td>Car type</td>
                             <th>Car Model</th>
-                            <th></th>
+                            <th>Services</th>
+                            <th>Request status</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Example Order Data Rows -->
                         <tr>
                             <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
-                            </td>
-                        </tr>
-                        <!-- Button trigger modal -->
-
-  
-
-                        <tr>
-                            <td>Khames</td>
-                            <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
-                            <td>c300</td>
-                            <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>tamer</td>
-                            <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
-                            <td>c300</td>
-                            <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ehab</td>
-                            <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
-                            <td>c300</td>
-                            <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Khames</td>
+                            <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>tamer</td>
+                            <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ehab</td>
+                            <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ehab</td>
+                            <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Ehab</td>
+                            <td>Ahmed</td>
                             <td>0123456789</td>
-                            <td>
-                                <a href="#">https://google.com/maps?q=30.769152,30.9624832</a>
-                            </td>
-                            <td>marcdes</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
                             <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
                             <td>
-                                <button class="status hold  "data-bs-toggle="modal" data-bs-target="#exampleModa2">Cancel</button>
-                                <button class="status paid"  data-bs-toggle="modal" data-bs-target="#exampleModa1">Confirm</button>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>0123456789</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
+                            <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
+                            <td class="buttons">
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>0123456789</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
+                            <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
+                            <td>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>0123456789</td>
+                            <td><a href="https://google.com/maps?q=30.769152,30.9624832">Show location</a></td>
+                            <td>marcedes</td>
+                            <td>c300</td>
+                            <td><ul>
+                                <li>car wash</li>
+                            </ul></td>
+                            <td>
+                                <button class="status hold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa2">Cancel</button>
+                                <button class="status paid" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModa1">Confirm</button>
+                            </td>
+                        </tr>
+                       
+                        <!-- More rows as needed -->
                     </tbody>
                 </table>
             </section>
         </main>
+
+        <!-- Menu Toggle Button (for mobile view) -->
+        <div class="menu-toggle">
+            <span>☰</span>
+        </div>
     </div>
 
+    <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe1" aria-hidden="true">
+        <div class="modal-dialog" style="wdth: 45rem">
+            <div class="modal-content" style="with: 45rem">
+                <div class="modal-header" style="wth: 45rem">
+                    <h5 class="modal-title" id="exampleModalLabel" style="with: 45rem">Confirm Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="time">Time Of Services</label>
+                    <input type="text" class="form-control" placeholder="Enter the time of the service">
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+        <div class="modal-dialog" style="with: 45rem">
+            <div class="modal-content" style="widh: 45rem">
+                <div class="modal-header" style="with: 45rem">
+                    <h5 class="modal-title" id="exampleModalLabel" style="widh: 45rem">Cancel Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="time">Reason Of The Cancelation</label>
+                    <input type="text" class="form-control" placeholder="Enter the reason of the cancelation">
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Cancel Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <!-- Modal -->
-  <div class="modal fade" id="exampleModa1" tabindex="-1" aria-labelledby="exampleModalLabe1" aria-hidden="true" >
-    <div class="modal-dialog"  style="width: 45rem" >
-      <div class="modal-content"  style="width: 45rem" >
-        <div class="modal-header" style="width: 45rem" >
-          <h5 class="modal-title" id="exampleModalLabel"  style="width: 45rem" >Confirm Order</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal for Canceling Orders -->
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+        <div class="modal-dialog" style="widh: 25rem">
+            <div class="modal-content" style="wdth: 25rem">
+                <div class="modal-header" style="with: 25rem">
+                    <h5 class="modal-title" id="exampleModalLabel" style="width: 45rem">Cancel Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal content here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Cancel Order</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <h4>name: ahmed</h4>
-            <h5>------------------</h5>
-            <h4>Phone: 01020201030</h4>
-            <h5>------------------</h5>
-            <h4>Car type: Marcedese</h4>
-            <h5>------------------</h5>
-            <h4>Car Model: C 300</h4>
-            <h5>------------------</h5>
-            <h4>Map link: <a href="https://google.com/maps?q=30.769152,30.9624832">https://google.com/maps?q=30.769152,30.9624832</a></h4>
-            <h5>------------------</h5>
-            <h4>Order status: Hold</h4>
-            <h5>------------------</h5>
-            <h4>Order Services:</h4>
-            <ul>
-                <li>car wash</li>
-                <li>asoline 95</li>
-                <li>Battery Change</li>
-            </ul>
-            <h5>------------------</h5>
-            <label for="time">Time Of Services</label>
-            <input type="text" class="form-control" placeholder="Enter the time of the service">
-        </div>
-        <div class="modal-footer " >
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Confirm</button>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true" >
-    <div class="modal-dialog"  style="width: 45rem" >
-      <div class="modal-content"  style="width: 45rem" >
-        <div class="modal-header" style="width: 45rem" >
-          <h5 class="modal-title" id="exampleModalLabel"  style="width: 45rem" >Cancel Order</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <h4>name: ahmed</h4>
-            <h5>------------------</h5>
-            <h4>Phone: 01020201030</h4>
-            <h5>------------------</h5>
-            <h4>Car type: Marcedese</h4>
-            <h5>------------------</h5>
-            <h4>Car Model: C 300</h4>
-            <h5>------------------</h5>
-            <h4>Map link: <a href="https://google.com/maps?q=30.769152,30.9624832">https://google.com/maps?q=30.769152,30.9624832</a></h4>
-            <h5>------------------</h5>
-            <h4>Order status: Hold</h4>
-            <h5>------------------</h5>
-            <h4>Order Services:</h4>
-            <ul>
-                <li>car wash</li>
-                <li>asoline 95</li>
-                <li>Battery Change</li>
-            </ul>
-            <h5>------------------</h5>
-            <label for="time">Reason Of The Cancelation</label>
-            <input type="text" class="form-control" placeholder="Enter the reason of the cancelation">
-        </div>
-        <div class="modal-footer " >
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-danger">Cancel Order</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script src="main.js"></script>
 
 </html>

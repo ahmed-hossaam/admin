@@ -32,6 +32,7 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Sidebar hidden when not in use */
 .sidebar.hidden {
     transform: translateX(-100%);
 }
@@ -97,18 +98,6 @@ nav ul li {
     font-weight: bold;
 }
 
-.delivered {
-    color: green;
-}
-
-.pending {
-    color: orange;
-}
-
-.hold {
-    color: red;
-}
-
 /* Orders Table */
 .orders-table {
     background: white;
@@ -140,22 +129,65 @@ th, td {
     font-weight: bold;
     text-align: center;
 }
+tr th{
+    text-align: center;
+
+}
+td{
+    font-size: 15px;
+    text-align: center;
+
+}
+td a{
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 5px;
+    
+
+}
 
 .status.hold {
     background: red;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 10px;
     margin: 5px;
 }
-
 .status.paid {
     background: green;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 10px;
     margin: 5px;
 }
+/* New Close Button */
+.close-sidebar {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.close-btn {
+    background: transparent;
+    border: none;
+    display: none;
+    font-size: 30px;
+    color: #ff0000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -181,6 +213,12 @@ th, td {
         width: 220px;
         transform: translateX(-100%);
         height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        color: #fff;
+        z-index: 9999;
     }
 
     .sidebar.show {
@@ -197,5 +235,42 @@ th, td {
 
     .orders-table {
         overflow-x: auto;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav .admin {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .close-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 30px;
+        z-index: 10;
     }
 }
